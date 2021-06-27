@@ -1,0 +1,154 @@
+@import './global.scss';
+.image_header{
+  height:100vh;
+    background-color: black;
+    display: flex;
+   @include mobile{
+       flex-direction: column;
+       align-items:center;
+   }
+    .left{
+       overflow: hidden;
+        flex:0.5;
+       
+      
+      
+       .img_header{
+        background-color:lightpink;
+        border-radius: 50%;
+           height: 800px;
+           position: relative;
+           display:flex;
+           align-items:center;
+           justify-content: center;
+          float: right;
+          
+           width:800px;
+          
+           @include mobile{
+            align-items: flex-start;
+           }
+           img{
+              height:90%;
+               
+              @include mobile{
+                  height:50%;
+                  
+              }
+              
+           }
+       }
+    }
+    .right{
+        flex:0.5;
+      position: relative;
+     
+        
+        .right_wrap{
+            height: 100%;
+            width:100%;
+            padding-left:50px ;
+            display: flex;
+            justify-content:center;
+            flex-direction:column;
+            @include mobile{
+                padding-left: 0;
+                align-items:center;
+            }
+           h1{
+               font-size: 60px;
+               margin:10px 0;
+               color:white;
+               @include mobile{
+                   font-size:40px;
+                  position: relative;
+                  left:50px;
+                  
+               }
+           }
+           h2{
+               font-size: 30px;
+               color:white
+           }
+           h3{
+               font-size: 35px;
+               color:white;
+               @include mobile{
+                font-size:20px;
+               }
+               span{
+                   font-size: inherit;
+                   color:crimson
+                  
+               }
+           }
+           
+
+        }
+       
+    }
+    
+    
+    
+
+
+}
+/* 
+.header_image{
+    
+    min-height: 100vh;
+    
+  
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+
+
+    
+}
+
+.headingg{
+    font-size:8vh;
+    font-weight: 700;
+    
+}
+
+.typeWriter_name{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:5vh;
+    font-weight: 700;
+    border-bottom: 5px solid lightcoral;
+    position:relative;
+    
+}
+.typeWriter_heading{
+    display:flex;
+    flex-direction: row;
+    
+   
+}
+.typestring{
+     margin-left: 15px;
+     margin-bottom: 1px;
+    font-size: 8vh;
+    font-weight: 700;
+   
+}
+.app{
+    color:red;
+    font-weight: 700;
+    
+
+}
+.web{
+    color:white;
+    font-weight: 700;
+   
+}
+
+ */

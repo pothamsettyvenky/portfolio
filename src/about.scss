@@ -1,0 +1,151 @@
+@import './global.scss';
+.About1{
+   
+   
+    display: flex;
+   @include mobile{
+       flex-direction: column;
+   }
+    .About_header{
+        color:white;
+        display: flex;
+        flex:0.6;
+        background-color:black;
+        justify-content:center;
+        flex-direction:column;
+        align-items:center;
+        
+      
+        
+        .image{
+            display:flex;
+            align-items:center;
+            justify-content: center; 
+            margin-top: 30px;
+           height:500px;
+           width:500px;
+           @include mobile{
+                height:150px;
+                width:100px;
+                align-items:center;
+        }
+           
+         img{ 
+            height:100%;
+            width:100%;
+            object-fit: cover;
+           
+            }
+        }.remainngs{
+            margin-bottom:50px;
+           display:flex;
+           flex-direction:column;
+           justify-content:center;
+           align-items:center;
+            height:100%;width:100%;
+            .name{
+                color:#F2AA4cFF;
+                font-size:30px;
+                border-bottom: 0.5vh solid white;
+
+                @include mobile{
+                    font-size: 15px;
+                    border-bottom: 0.1vh solid white;
+                }
+            }
+            .Aboutt{
+                margin-top:10px;
+                color:white;
+                font-size: 17px;
+                flex-wrap: nowrap;
+                @include mobile{
+                    font-size:1.5vh;
+                    flex-wrap: wrap;
+                    
+                }
+            } .aboutme{
+                color:#F2AA4cFF;
+                align-items:center;
+              
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                @include mobile{
+                    font-size:2vh;
+                }
+                }
+                strong{
+                    color:#F2AA4cFF;
+            }
+        
+       
+    }
+        }
+        .left{
+            flex:0.5;
+            background-color:white;
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+            flex-direction: column;
+            p{
+                font-size:30px;
+                position: relative;
+                top:-50px;
+                @include mobile{
+                    font-size:20px;
+                    position: relative;
+                    top:0;
+                }
+            }
+            
+                .skills{
+                    position: relative;
+                    top:-50px;
+                    width:100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items:flex-start;
+                    justify-content:space-evenly;
+                    @include mobile{
+                        
+                        position: relative;
+                        top:0;
+                    }
+                    .underline{
+                        width:80px;
+                        height:2px;
+                        background-color:black;
+                        margin-top: 10px;
+                    }
+                    .icons{
+                        color:red;
+                      display: flex;
+                      justify-content:center;
+                      align-items:center;
+                      font-size:40;
+                      
+
+                    }
+                    .Front-end{
+                       
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:center;
+                        align-items:center;
+                    }
+                    h1{
+                        color:crimson
+                    }
+                    ul{ margin-top:10px;
+                        color:black;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items:center;
+                    
+                    }
+                    
+                }
+            
+        }
+           
+}
